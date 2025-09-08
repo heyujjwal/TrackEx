@@ -1,36 +1,75 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🚀 TrackEx – AI Powered Expense Tracker
 
-## Getting Started
+<img width="1306" height="666" alt="image" src="https://github.com/user-attachments/assets/c0ca93a6-f082-4d0d-bc22-749d2942eb94" />
 
-First, run the development server:
+  
+
+> 💸 **TrackEx** is a modern expense and income tracking application powered by **AI-driven insights**, built with **Next.js**, **Supabase**, and enhanced with advanced tools like **Arcjet**, **Resend**, **InnJest**, **React Email**, and **Clerk** for authentication.  
+Say goodbye to financial stress and hello to **financial freedom**! 🌟  
+
+---
+
+## ✨ Features  
+
+✅ **Dashboard** – Get a clear overview of all your transactions  
+✅ **Add Transactions** – Track expenses & income with ease  
+✅ **AI-Powered Insights (Gemini)** – Intelligent recommendations to optimize your finances  
+✅ **AI Smart Receipt Scanner** – Extract transaction data automatically 📸  
+✅ **Budget Planning** – Plan, manage, and stick to your budget 💡  
+✅ **Multi-Account & Multi-Currency** – Manage all your finances in one place 🌍  
+✅ **Automated Reports & Analytics** – Visual breakdown of spending patterns 📊  
+✅ **Secure Authentication (Clerk)** – Protect your data with enterprise-grade security 🔐  
+✅ **Bot Protection & Rate Limiting (Arcjet)** – Keep your app safe from malicious traffic 🛡️  
+✅ **Automated Cron Jobs (Inngest)** – Monthly email reports & budget alerts sent automatically 📧  
+
+
+---
+
+## 🖼️ Preview  
+
+### Landing Page
+<img width="1306" height="666" alt="image" src="https://github.com/user-attachments/assets/c0ca93a6-f082-4d0d-bc22-749d2942eb94" />
+
+### Dashboard
+<img width="1284" height="685" alt="image" src="https://github.com/user-attachments/assets/431a206b-ea0c-47bd-8645-5d37ada917c5" />
+
+
+---
+
+## ⚡ Tech Stack  
+
+| Category            | Technology |
+|---------------------|------------|
+| **Frontend**        | [Next.js](https://nextjs.org/), [React](https://react.dev/), [TailwindCSS](https://tailwindcss.com/), [shadcn/ui](https://ui.shadcn.com/) |
+| **Backend**         | [Supabase](https://supabase.com/), [Prisma](https://www.prisma.io/) |
+| **Authentication**  | [Clerk](https://clerk.com/) |
+| **AI**              | [Google Gemini](https://deepmind.google/technologies/gemini/) |
+| **Email**           | [Resend](https://resend.com/), [React Email](https://react.email/) |
+| **Security**        | [Arcjet](https://arcjet.com/) – rate limiting, bot protection |
+| **Automation**      | [Inngest](https://www.inngest.com/) – cron jobs (monthly reports & budget alerts) |
+| **Languages**       | JavaScript / TypeScript |
+---
+
+## ⚙️ Installation & Setup  
+
+Follow these steps to run **TrackEx** locally:  
 
 ```bash
+# 1️⃣ Clone the repository
+git clone https://github.com/heyujjwal/trackex.git
+
+# 2️⃣ Navigate into the project
+cd trackex
+
+# 3️⃣ Install dependencies
+npm install
+
+# 4️⃣ Setup environment variables
+cp .env.example .env
+# Fill in your Supabase, Clerk, Resend, Arcjet, Gemini API keys
+
+# 5️⃣ Run Prisma migrations
+npx prisma migrate dev
+
+# 6️⃣ Start the development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
